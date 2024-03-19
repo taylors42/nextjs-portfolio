@@ -30,19 +30,33 @@ getMostUsedLanguage()
   .catch((error) => console.error(error));
 export default function FirstScreen() {
   return (
-    <header className="flex items-center">
-      <div className="flex justify-center items-center gap-2 ">
-        <div className="scale-150 mx-2 my-2">
-          <Avatar>
-            <AvatarImage src="https://avatars.githubusercontent.com/u/96550502?s=400&u=15f0af6a189c6887581ad3d9beb06e6ca933214d&v=4" />
-            <AvatarFallback>TAY</AvatarFallback>
-          </Avatar>
+    <div className="flex flex-col items-center justify-between">
+      <header className="flex items-center">
+        <div className="flex justify-center items-center gap-2 mb-8">
+          <div className="scale-150">
+            <Avatar>
+              <AvatarImage src="https://avatars.githubusercontent.com/u/96550502?s=400&u=15f0af6a189c6887581ad3d9beb06e6ca933214d&v=4" />
+              <AvatarFallback>TAY</AvatarFallback>
+            </Avatar>
+          </div>
+          <div className="flex flex-col justify-center items-left mx-4">
+            <p className="text-white text-lg text-bold">Taylor</p>
+            <Badge variant="secondary">Web Developer</Badge>
+          </div>
         </div>
-        <div className="flex flex-col justify-center items-left">
-          <p className="text-white">taylor</p>
-          <Badge variant="secondary"> Web Developer</Badge>
-        </div>
+      </header>
+      <div>
+        <h3 className="text-white font-semibold text-center">
+          Hello, I'am Taylor
+        </h3>
+        <p className="text-white mt-4 text-center">
+          Experienced Web Developer specializing in crafting intuitive corporate
+          websites. Proficient in JavaScript, React.js, Next.js, and Rust.
+          Skilled in automating validation processes and enhancing user
+          experience through SEO techniques. Let's build something great
+          together!
+        </p>
       </div>
-    </header>
+    </div>
   );
 }
